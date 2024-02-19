@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-around; /* Distributes space evenly around items */
+}
+
+.cat-item {
+  margin: 10px;
+  text-align: center; /* Centers the text under the image */
+}
+
+.cat-item img {
+  width: 100%; /* Makes the image responsive */
+  max-width: 150px; /* Limits the maximum width to prevent overly large images */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Optional: Rounds the corners of the images */
+}
+
+.cat-item p {
+  margin-top: 10px; /* Adds a little space between the image and the text */
+}

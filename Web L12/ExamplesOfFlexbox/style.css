@@ -1,0 +1,83 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-around; /* Distributes items evenly */
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.nav-item {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-item {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.nav-item:hover {
+  background-color: #555; /* Changes background color on hover */
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Centers children horizontally */
+  margin: 20px;
+}
+
+/* Centered Box */
+.centered-box {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100px;
+  width: 100%;
+  max-width: 300px; /* Maximum width of the box */
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  justify-content: center; /* Centers items */
+  gap: 10px; /* Adds space between items */
+}
+
+.gallery-item {
+  flex: 1; /* Allows items to grow to fill space */
+  min-width: 100px; /* Minimum width before wrapping */
+  height: 100px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  border: 1px solid #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column; /* Stacks nav items vertically on small screens */
+  }
+}
